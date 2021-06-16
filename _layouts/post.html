@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="standard-container">
+    <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+        <p class="post-category">{{ page.category | join: ', ' | replace: "-", " " }}</p>
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+        Posted on <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%B %d %Y" -%}
+            {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+            by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        {%- endif -%}</p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+
+    {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+    </article>
+
+    <div id="post-nav-links">
+        <div class="previous">
+            {% if page.previous %}
+                <p class="post-nav-header">Previous post</p>
+                <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+            {% endif %}
+        </div>
+
+        <div class="next">
+            {% if page.next %}
+                <p class="post-nav-header">Next post</p>
+                <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
