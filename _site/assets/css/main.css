@@ -247,7 +247,7 @@ nav { padding: 0 20px; }
 
 #site-header .home-link img { height: 47px; width: auto; display: inline-block; padding-right: 15px; margin-bottom: 5px; }
 
-#site-header .home-link span { font-size: 22px; line-height: 75px; display: inline-block; font-weight: 700; letter-spacing: 1px; }
+#site-header .home-link span { font-family: 'satellaregular'; font-size: 28px; line-height: 75px; display: inline-block; font-weight: 700; letter-spacing: 3px; }
 
 #site-header a.main-link { line-height: 75px; margin: 0 20px; border-bottom: none; }
 
