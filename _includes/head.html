@@ -1,0 +1,82 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <!-- meta -->
+    {% if page.title %} 
+        <title>{{ page.title }} | cypherstig</title>
+        <meta name="twitter:title" content="{{ page.title }} | cypherstig">
+        <meta name="og:title" content="{{ page.title }} | cypherstig">
+    {% else %}
+        <title>cypherstig</title>
+        <meta name="twitter:title" content="cypherstig">
+        <meta name="og:title" content="cypherstig">
+    {% endif %}
+
+    {% if page.description %} 
+        <meta name="description" content="{{ page.description }}">
+        <meta name="twitter:description" content="{{ page.description }}">
+        <meta name="og:description" content="{{ page.description }}">
+    {% else %}
+        <meta name="description" content="We're contantly devouring content produced by Bitcoin thought leaders across the globe to bring you comprehensive notes and unique perspectives, fueling a curious, more knowledgable community.">
+        <meta name="twitter:description" content="We're contantly devouring content produced by Bitcoin thought leaders across the globe to bring you comprehensive notes and unique perspectives, fueling a curious, more knowledgable community.">
+        <meta name="og:description" content="We're contantly devouring content produced by Bitcoin thought leaders across the globe to bring you comprehensive notes and unique perspectives, fueling a curious, more knowledgable community.">
+    {% endif %}
+
+    <!-- canonical -->
+    {% if page.canonical %} 
+        <link rel="canonical" href="{{ page.canonical }}" />
+    {% endif %}
+
+    <!-- images -->
+    {% if page.header-image %} 
+        <meta name="twitter:image" content="{{ page.header-image }}">
+        <meta name="og:image" content="{{ page.header-image }}">
+    {% else %}
+        <meta name="twitter:image" content="/assets/img/cypherstig_32_circle.png">
+        <meta name="og:image" content="/assets/img/cypherstig_32_circle.png">
+    {% endif %}
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cypherstig">
+
+    <!-- facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="cypherstig">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="/assets/webfontkit-20210624-145451/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="manifest" href="/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- css + other includes -->
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/fontawesome-5.12.1/css/all.min.css' | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+    
+    {%- include google-analytics.html -%}
+</head>

@@ -1,0 +1,123 @@
+---
+layout: default
+title: Notices & Disclaimers
+description: Legal disclaimers, licenses, and acceptable use.
+permalink: /notices/
+---
+
+<h2>Notices & Disclaimers</h2>
+
+<div class="standard-container">
+    <p>Cypherstig is provided with good intentions on an "as-is" basis, without warranty, and disclaiming liability for damages.</p>
+
+    <h4>Legal Disclaimer</h4>
+    <p>Cypherstig is not a law firm. As such, the cypherstig website and contributors are not providing legal advice. The material and recommendations in our website and guides do not constitute legal advice nor does contributing to the website or communicating with cypherstig or other contributors about our website create an attorney-client relationship.</p>
+
+    <p>Running this website, like any human endeavor, involves uncertainty and trade-offs. We hope this website helps, but it may include mistakes, and can’t address every situation. If you have any questions about your situation, we encourage you to do your own research, seek out other experts, and discuss with your and the cypherstig community. If you have any legal questions, you should consult with your own legal counsel before moving forward.</p>
+
+    <p>Cypherstig is an open source project contributed to under licenses that include terms that, for the protection of the website and its contributors, make clear that the cypherstig project and website is offered “as-is”, without warranty, and disclaiming liability for damages resulting from using the website or any recommendations contained within. Cypherstig does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on the website or otherwise relating to such materials on the website or on any third-party sites linked on this site.</p>
+
+    <p>Cypherstig additionally does not warrant that this website will be constantly available, or available at all.</p>
+
+    <h4>Licenses</h4>
+    <p>Content copyright on this website is waived under the terms of <a href='https://creativecommons.org/publicdomain/zero/1.0/legalcode' target='_blank'>CC0 1.0 Universal</a>.</p>
+
+    <p>In certain jurisdictions, namely those in which the copyright waiver in the CC0-1.0 is judged for any reason to be legally invalid or ineffective under applicable law, content may be copyright © cypherstig contributors, released under the <a href='https://creativecommons.org/publicdomain/zero/1.0/legalcode' target='_blank'>CC0 1.0 Universal</a> license.</p>
+
+    <p>Content on this website is made freely available under the CC-1.0.</p>
+
+    <p>Code, including source files and code samples if any in the content, is released under CC-1.0, with the following exceptions:</p>
+
+    <ul>
+        <li>Bootstrap code is under the MIT license. See: <a href='https://github.com/twbs/bootstrap/blob/master/LICENSE' target='_blank'>github.com/twbs/bootstrap/blob/master/LICENSE</a></li>
+        <li>Jekyll code is under the MIT license. See: <a href='https://github.com/jekyll/jekyll/blob/master/LICENSE' target='_blank'>github.com/jekyll/jekyll/blob/master/LICENSE</a></li>
+        <li><a href='https://github.com/privacytoolsIO/privacytools.io/blob/master/assets/js/jquery-3.3.1.min.js'>jQuery</a> is under the MIT license. See: <a href='github.com/twbs/bootstrap/blob/master/LICENSE' target='_blank'>jquery.org/license</a></li>
+    </ul>
+
+    <h4>Acceptable Use</h4>
+    <p>You may not use this website in any way that causes or may cause damage to the website or impairment of the availability or accessibility of cypherstig, or in any way which is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.</p>
+    
+</div>
+
+<script>
+
+    $( document ).ready(function() {
+
+        /**********
+        handle book snippet submission
+        **********/
+
+        $( '#suggest-book-snippet form' ).on( 'submit', function(e) {
+            e.preventDefault();
+
+            var inputs = $( this ).serializeArray();
+            var inputsValid = true;
+            
+            $( '#suggest-book-snippet .request-status' ).fadeOut();
+            $( '#suggest-book-snippet .request-status.loading' ).fadeIn();
+
+            inputsValid = validateSnippetInputs( inputs );
+
+            if( inputsValid ) {
+
+                inputs = restructureInputArrayToObject( inputs );
+                inputs = { new_snippet: true, data: inputs };
+
+                $.post( "../scripts-legacy/credit.php", inputs, function( data ) {
+                    
+                    $( '#suggest-book-snippet .request-status' ).fadeOut();
+                    $( '#suggest-book-snippet .request-status.success' ).fadeIn();
+                    clearInputs();
+
+                }).fail(function() {
+                    $( '#suggest-book-snippet .request-status' ).fadeOut();
+                    $( '#suggest-book-snippet .request-status.fail' ).fadeIn();
+                });
+            } else {
+                $( '#suggest-book-snippet .request-status' ).fadeOut();
+                $( '#suggest-book-snippet .request-status.fail' ).fadeIn();
+            }
+
+            return;
+        });
+
+        function validateSnippetInputs( inputs ) {
+
+            var valid = true;
+            
+            if( inputs[1].value.length > 20 ) {    
+                valid = false;
+            }
+            if( inputs[2].value.length > 6000 ) {
+                valid = false;
+            }
+            if( inputs[3].value.length > 65000 ) {
+                valid = false;
+            }
+            
+            return valid;
+        }
+
+        function restructureInputArrayToObject( inputs ) {
+
+            inputsObject = {};
+            inputs.forEach( function( value, index ) {
+                inputsObject[ value.name ] = value.value;
+            });
+            
+            return inputsObject;
+        }
+
+        function clearInputs() {
+            $( 'input:not([type=hidden]), textarea' ).val( '' );
+            return;
+        }
+
+        function enableDisableInputs( disabled ) {
+            $( 'button' ).prop( 'disabled', disabled );
+            return;
+        }
+
+    });
+
+</script>

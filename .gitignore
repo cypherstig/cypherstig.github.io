@@ -1,0 +1,5 @@
+/_drafts/
+/vendor/
+_site
+*-cache/
+*.DS_Store

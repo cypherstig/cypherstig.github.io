@@ -1,0 +1,30 @@
+title: cypherstig
+description: "We're contantly devouring content produced by Bitcoin thought leaders across the globe to bring you comprehensive notes and unique perspectives, fueling a curious, more knowledgable community."
+url: "https://cypherstig.com"
+author: cypherstig
+logo: /assets/img/cypherstig_32_circle.png
+header-image: /assets/img/cypherstig_32_circle.png
+  
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+    - jekyll-feed
+    - jekyll-paginate-v2
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - vendor
+
+pagination:
+    enabled: true
+    debug: true
+    per_page: 5
+    limit: 0
+    sort_field: 'date'
+    sort_reverse: true
+    permalink: '/:num/'
+
+    

@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="standard-container">
+
+    <p class='blog-categories'>
+        <a class='{{ page.showing-all }}' href='/academy'>All</a>
+        <a class='{{ page.showing-summaries }}' href='/academy/summaries'>Summaries</a>
+        <a class='{{ page.showing-vl }}' href='/academy/video-lectures'>Video Lectures</a>
+        <a class='{{ page.showing-al }}' href='/academy/audio-lectures'>Audio Lectures</a>
+        <a class='{{ page.showing-lt }}' href='/academy/lecture-templates'>Lecture Templates</a>
+        <a class='{{ page.showing-games }}' href='/academy/games'>Games</a>
+        <a class='{{ page.showing-quizzes }}' href='/academy/quizzes'>Quizzes</a>
+        <a class='{{ page.showing-vocabulary }}' href='/academy/vocabulary'>Vocabulary</a>
+    </p>
+
+    <div id="post-listing-container">
+        {% for post in paginator.posts %}
+            {% if post.tags contains "academy" %}
+                <div class="post-listing">
+                    <div class="image" style="background-image: url({{post.header-image}});">
+
+                    </div>
+                    <div class="meta">
+                        <p class="category">{{ post.categories | join: ', ' | replace: "-", " " }}</p>
+                        <p class="post-listing-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
+                        <p class="excerpt">{{ post.description }}</p>
+                        <p><a href="{{ post.url }}">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% if paginator.total_pages > 1 %}
+        <div id="post-listing-nav">
+            {% if paginator.previous_page %}
+                
+                <a class="btn btn-primary newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><i class="fa fa-angle-left" aria-hidden="true"></i> Newer</a>
+                
+                {% endif %}
+                {% if paginator.next_page %}
+                
+                <a class="btn btn-primary older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                
+            {% endif %}
+        </div>
+    {% endif %}
+    
+    
+
+</div>

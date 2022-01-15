@@ -1,0 +1,120 @@
+<footer class="site-footer h-card">
+
+    <div id="get-email-container">
+
+            <div id='get-email'>
+                <a class="offset-page-link" id="subscribe"></a>
+                <p>Cypherstig is contantly devouring content produced by Bitcoin thought leaders across the globe to bring you comprehensive notes and unique perspectives, fueling a curious, more knowledgable community.</p>
+                <p>Updates delivered once a week, at most.</p>
+                <div class='input-container'>
+                    <form action="https://cypherstig.us19.list-manage.com/subscribe/post?u=6696a5c82994b5bdeff5dd5b9&amp;id=db71216422" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" title="MailChimp: cypherstig" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                        
+                        <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f9bdb5181bfba9cbe940280c4_f884f4a77f" tabindex="-1" value=""></div>
+                        <input type="submit" value="Count Me In" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
+                    </form>
+                </div>
+                <p class='note front-email-notice'>See full details of how we comply with global rules for data handling <a href="http://eepurl.com/gVeX8j " target="_blank" title="MailChimp: Data Handling Rules">here on MailChimp</a>.</p>
+            </div>
+
+    </div>
+
+    <div class="social-links">
+        <ul>
+            <li><a href="https://twitter.com/cypherstig" target="_blank"><i class="fab fa-twitter"></a></i></li>
+            <li><a href="https://www.youtube.com/channel/UCQqQKHT3qrXMWlZVLrYDqKw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/cypherstig/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="emailCopy" data-clipboard-text="get@cypherstig.com" href="#" onclick="return false;"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://t.me/cypherstig" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+            <li><a href="https://keybase.io/cypherstig" target="_blank"><i class="fab fa-keybase"></i></a></li>
+            <li><a href="https://github.com/cypherstig/cypherstig.github.io" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <!-- 
+        <i class="fab fa-reddit-alien"></i>
+        <i class="fab fa-hacker-news-square"></i>
+        -->
+    </div>
+
+    <div class="copyright">
+        <p class="transparency">
+            <a href="/privacy">Privacy Statement</a>
+            <a href="/notices">Notices & Disclaimers</a> 
+        </p>
+        <p>No copyright ever. No rights reserved.</p>
+    </div>
+
+
+    <script>
+        
+        /**********
+        autoscroll
+        **********/
+        $(document).ready(function() {
+            
+            var offset = 0;
+            $( 'header' ).on( 'click', '.main-link.jump', function( e ) {
+
+                if( $('#home-page').length ) {
+                    e.preventDefault();                  
+                    
+                    $( 'html, body' ).stop().animate({
+                        'scrollTop': $( e.currentTarget.hash ).offset().top
+                    }, 900, 'swing', function () {
+                        //pass
+                    });
+                }
+                
+            });
+        });
+
+        /**********
+        mobile/responsive menu stuff
+        **********/
+        
+        $( '#mobile-menu-toggle' ).on( 'click', function( elem ) {
+            if( $( elem.currentTarget ).hasClass( 'fa-bars' ) ) {
+                $( '#mobile-menu-toggle' ).removeClass( 'fa-bars' ).addClass( 'fa-times' );
+                $( '#mobile-menu' ).addClass( 'show' );
+            } else {
+                $( '#mobile-menu-toggle' ).removeClass( 'fa-times' ).addClass( 'fa-bars' );
+                $( '#mobile-menu' ).removeClass( 'show' );
+            }
+        });
+
+        /**********
+        email copy to clipboard
+        **********/
+
+        $('.emailCopy').tooltip({
+          trigger: 'click',
+          placement: 'top'
+        });
+
+        function setTooltip(btn, message) {
+          btn.tooltip('hide')
+            .attr('data-original-title', message)
+            .tooltip('show');
+        }
+
+        function hideTooltip(btn) {
+          setTimeout(function() {
+            btn.tooltip('hide');
+          }, 1000);
+        }
+
+        // Clipboard
+
+        var clipboard = new Clipboard('.emailCopy');
+
+        clipboard.on('success', function(e) {
+            var btn = $(e.trigger);
+          setTooltip(btn, 'Copied!');
+          hideTooltip(btn);
+        });
+
+    </script>
+
+</footer>
