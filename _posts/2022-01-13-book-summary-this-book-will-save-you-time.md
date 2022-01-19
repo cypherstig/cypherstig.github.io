@@ -8,7 +8,7 @@ tags: [academy]
 header-image: "/assets/img/this-book-will-save-you-time/bitcoin-time-header.jpg"
 cover-image: "/assets/img/this-book-will-save-you-time/this-book-will-save-you-time-cover.png"
 author: cypherstig
-# description: '"Bitcoin is the first money allowing you to trade your only truly valuable asset (limited time) for similarly scarce units of value (bitcoin)."'
+# description: '"Bitcoin is the first money allowing you to trade your only truly valuable, strictly limited asset (time) for similarly scarce units of value (bitcoin)."'
 work: "This Book Will Save You Time"
 work-type: "book"
 work-creator: "Misir Mahmudov"
@@ -34,7 +34,7 @@ time-saved: "50 minutes"
 - People spend a majority of their days "working," a term that has become synonymous with duties that are mindless, boring, and unejoyable.
 - Time is the opportunity cost of earning a fat paycheck by climbing the corporate ladder.
 - **Opportunity cost**: Sum of the potential gain that could have been earned by the alternatives of a given decision.
-- Time is the most valuable and strictly limited resource you have: can't buy it, can't make more of it. Once it's gone, it's gone forever.
+- <mark>Time is the most valuable and strictly limited resource you have: can't buy it, can't make more of it. Once it's gone, it's gone forever.</mark>
 - What good is wealth, if you don't have time?
 - <mark>True wealth is an abundance of free time, which can be converted into anything.</mark>
 
@@ -185,7 +185,7 @@ time-saved: "50 minutes"
 	- If anyone tried to unfavorably change or harm Bitcoin, other participants in the decentralized system would simply block them, preserving the integrity of Bitcoin.
 - In the modern world, you are always at the mercy of the inflation rate. History shows that you cannot trust banks with the money supply. If you had the ability to create money for whatever expenses you have, wouldn't you do it?
 <a href="#citations"><img class="post-header-image-right portrait standard-img-border" src="/assets/img/this-book-will-save-you-time/money-printer-brr.gif"></a>
-- <mark>Bitcoin is the first money allowing you to trade your only truly valuable asset (limited time) for similarly scarce units of value (bitcoin).</mark>
+- <mark>Bitcoin is the first money allowing you to trade your only truly valuable, strictly limited asset (time) for similarly scarce units of value (bitcoin).</mark>
 
 ## Chapter 10: A Promising Future
 
