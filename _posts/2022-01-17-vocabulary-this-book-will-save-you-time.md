@@ -8,7 +8,7 @@ tags: [academy]
 header-image: "/assets/img/this-book-will-save-you-time/bitcoin-time-header.jpg"
 cover-image: "/assets/img/this-book-will-save-you-time/this-book-will-save-you-time-cover.png"
 author: cypherstig
-description: "Important terms and definitions from This Book Will Save You Time"
+# description: "Important terms and definitions from This Book Will Save You Time"
 work: "This Book Will Save You Time"
 work-type: "book"
 work-creator: "Misir Mahmudov"
