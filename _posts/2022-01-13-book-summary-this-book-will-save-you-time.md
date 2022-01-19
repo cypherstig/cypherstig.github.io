@@ -8,7 +8,7 @@ tags: [academy]
 header-image: "/assets/img/this-book-will-save-you-time/bitcoin-time-header.jpg"
 cover-image: "/assets/img/this-book-will-save-you-time/this-book-will-save-you-time-cover.png"
 author: cypherstig
-description:
+# description: '"Bitcoin is the first money allowing you to trade your only truly valuable asset (limited time) for similarly scarce units of value (bitcoin)."'
 work: "This Book Will Save You Time"
 work-type: "book"
 work-creator: "Misir Mahmudov"

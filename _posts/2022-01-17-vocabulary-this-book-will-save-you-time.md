@@ -25,7 +25,7 @@ time-saved: "50 minutes"
 
 <p><em><u>Note from cypherstig</u>: This resource can be a great way to orange pill lingering Bitcoin fever, but nothing compares to consuming the original work of art. Please support the original creator by purchasing {{ page.work }} <a href="{{ page.work-link }}" target="_blank" title="{{ page.work-distributer }}: {{ page.work }}">({{ page.work-distributer }})</a> and smashing follow on Twitter (<a href="{{ page.twitter-link }}" target="_blank" title="Twitter: {{ page.twitter-handle }}">{{ page.twitter-handle }}</a>)!</em></p>
 
-## List of Vocabulary Words
+## List of Terms
 
 - **Attention economy**: Every single website, news agency, social media platform, celebrity, and YouTuber is fighting for your time and attention. <a href="#citations">(Mahmudov, 2020)</a>
 
