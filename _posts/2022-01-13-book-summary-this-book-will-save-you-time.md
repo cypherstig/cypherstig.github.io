@@ -20,10 +20,10 @@ time-saved: "50 minutes"
 ---
 <a href="#citations"><img class="post-header-image-right portrait standard-img-border" src="{{ page.cover-image }}" alt="{{ page.work }} {{ page.work-type }} cover"></a>
 
+<p><u>Other content from this {{ page.work-type }}</u>: <a href="/academy/vocabulary/this-book-will-save-you-time" title="Vocabulary from This Book Will Save You Time">Vocabulary</a></p>
+
 <!--Summary Words: 3060; Book Words: 15300-->
 <p><u>Estimated time saved reading summary vs. original (@250WPM)</u>: {{ page.time-saved }}</p>
-
-<p><u>Other content from this {{ page.work-type }}</u>: <a href="/academy/vocabulary/this-book-will-save-you-time" title="Vocabulary from This Book Will Save You Time">Vocabulary</a></p>
 
 <p><em><u>Note from cypherstig</u>: This resource can be a great way to orange pill lingering Bitcoin fever, but nothing compares to consuming the original work of art. Please support the original creator, {{ page.work-creator }}, by purchasing {{ page.work }} <a href="{{ page.work-link }}" target="_blank" title="{{ page.work-distributer }}: {{ page.work }}">({{ page.work-distributer }})</a> and smashing follow on Twitter (<a href="{{ page.twitter-link }}" target="_blank" title="Twitter: {{ page.twitter-handle }}">{{ page.twitter-handle }}</a>)!</em></p>
 
