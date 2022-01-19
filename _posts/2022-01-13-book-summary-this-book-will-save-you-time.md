@@ -21,7 +21,7 @@ time-saved: "50 minutes"
 <a href="#citations"><img class="post-header-image-right portrait standard-img-border" src="{{ page.cover-image }}" alt="{{ page.work }} {{ page.work-type }} cover"></a>
 
 <!--Summary Words: 3060; Book Words: 15300-->
-<p><u>Estimated time saved reading summary vs. original (@250WPM)</u>: </p>
+<p><u>Estimated time saved reading summary vs. original (@250WPM)</u>: {{ page.time-saved }}</p>
 
 <p><u>Other content from this {{ page.work-type }}</u>: <a href="/academy/vocabulary/this-book-will-save-you-time" title="Vocabulary from This Book Will Save You Time">Vocabulary</a></p>
 
