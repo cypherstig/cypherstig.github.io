@@ -6,15 +6,26 @@ date: 2022-01-13
 category: [summaries]
 tags: [academy]
 header-image: "/assets/img/this-book-will-save-you-time/bitcoin-time-header.jpg"
+cover-image: "/assets/img/this-book-will-save-you-time/this-book-will-save-you-time-cover.png"
 author: cypherstig
-description:
+description: '"Bitcoin is the first money allowing you to trade your only truly valuable asset (limited time) for similarly scarce units of value (bitcoin)."'
+work: "This Book Will Save You Time"
+work-type: "book"
+work-creator: "Misir Mahmudov"
+work-link: "https://www.amazon.com/This-Book-Will-Save-Time/dp/B088JH7LX8/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1638502611&sr=8-1"
+work-distributer: "Amazon"
+twitter-handle: "@misir_mahmudov"
+twitter-link: "https://twitter.com/misir_mahmudov"
+time-saved: "50 minutes"
 ---
-<a href="#citations"><img class="post-header-image-right portrait standard-img-border" src="/assets/img/this-book-will-save-you-time/this-book-will-save-you-time-cover.png" alt="This Book Will Save You Time book cover"></a>
+<a href="#citations"><img class="post-header-image-right portrait standard-img-border" src="{{ page.cover-image }}" alt="{{ page.work }} {{ page.work-type }} cover"></a>
 
 <!--Summary Words: 3060; Book Words: 15300-->
-<p><u>Estimated Time Saved Reading Summary vs. Original (@250WPM)</u>: 50 minutes</p>
+<p><u>Estimated time saved reading summary vs. original (@250WPM)</u>: </p>
 
-<p><em><u>Note from cypherstig</u>: This resource can be a great way to orange pill lingering Bitcoin fever, but nothing compares to consuming the original work of art. Please support the original creator by purchasing This Book Will Save You Time <a href="https://www.amazon.com/This-Book-Will-Save-Time/dp/B088JH7LX8/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1638502611&sr=8-1" target="_blank" title="Amazon: This Book Will Save You Time">(Amazon)</a> and smashing follow on Twitter (<a href="https://twitter.com/misir_mahmudov" target="_blank" title="Twitter: @misir_mahmudov">@misir_mahmudov</a>)!</em></p>
+<p><u>Other content from this {{ page.work-type }}</u>: <a href="/academy/vocabulary/this-book-will-save-you-time" title="Vocabulary from This Book Will Save You Time">Vocabulary</a></p>
+
+<p><em><u>Note from cypherstig</u>: This resource can be a great way to orange pill lingering Bitcoin fever, but nothing compares to consuming the original work of art. Please support the original creator by purchasing {{ page.work }} <a href="{{ page.work-link }}" target="_blank" title="{{ page.work-distributer }}: {{ page.work }}">({{ page.work-distributer }})</a> and smashing follow on Twitter (<a href="{{ page.twitter-link }}" target="_blank" title="Twitter: {{ page.twitter-handle }}">{{ page.twitter-handle }}</a>)!</em></p>
 
 ## Chapter 1: Money Rich, Time Poor
 
@@ -122,14 +133,13 @@ description:
 - A variety of limited goods have served the role of money throughout history, only to eventually be exploited and devalued by increasing supply (stones, shells, glass beads, cows, metals, etc.).
 	- Example: Locals on Yap island in the Pacific used Rai stones as their currency, as it was very scarce on the island. Eventually, Rai stones were imported to the island in exchange for labor, inflating supply and devaluing the local currency until it was eventually worthless.
 - Properties of monetary goods that fulfill money's store of value and medium of exchange functionalities: scarcity, durability, portability, fungibility, verifiability, divisibility, and established history.
-- **Fungibility**: The characteristic of an asset that determines how freely it can be exchanged with other similar assets 
+- **Fungibility**: The characteristic of an asset that determines how freely it can be exchanged with other similar assets. 
 - **Scarcity**: The characteristic of an asset that determines the gap between the demand for that asset, and its available supply.
 	- Scarcity is the most important property for good money that preserves its value. Otherwise, its supply will inevitably increase, causing it to lose value.  
 
 - The world eventually adopted gold as the global monetary standard in the 19th century because it is the scarcest stable element in Earth's crust, meaning that gold is a physical good whose supply is the most difficult to increase.
 - **The Gold Standard**: A monetary system whereby a country's money supply is directly linked to the value of its gold reserves.
 - Gold has been mined for thousands of years, and remains to be a very expensive process. There is no individual or country that could arbitrarily increase the amount of gold they own and thus make it lose value.
-<a href="#citations"><img class="post-header-image-right portrait standard-img-border" src="/assets/img/this-book-will-save-you-time/gold-pouring.gif" alt="Gold Pouring"></a>
 - Even when more gold is mined, the new supply is tiny compared to existing stockpiles that have been mined throughout history, allowing gold to have strong immunity against inflation and devaluation.
 - For small purchases and daily trade, people used other metals that were less scarce and less valuable, such as silver and copper.
 - As gold and other metals eventually became impractical to use, the world shifted to paper money backed by gold or silver.
@@ -143,7 +153,7 @@ description:
 - In 1971, Richard Nixon abandoned the Gold Standard, canceling the tie between paper money and gold. 
 	- Gold reserves no longer limited nations' ability to create more of their currency, meaning countries could arbitrarily increase total money supply.
 - As the amount of currency (dollars) in circulation increases, the value of each individual dollar falls.
-<a href="#citations"><img class="post-header-image-right-large portrait standard-img-border" src="/assets/img/this-book-will-save-you-time/USD-pp-vs-currency-circulation.jpg" alt="USD purchasing power vs currency in circulation"></a>
+<a href="#citations"><img class="post-fullwidth-image standard-img-border" src="/assets/img/this-book-will-save-you-time/USD-pp-vs-currency-circulation.jpg" alt="USD purchasing power vs currency in circulation"></a>
 - Purchasing power decreased by more than 5 times between 1971 and 2006, and is directly related to currency inflation.
 	- $20 in 2006 was worth $100 in 1971
 	- A million dollar New York Apartment today would have costed under $40,000 in 1971.
@@ -175,7 +185,7 @@ description:
 	- If anyone tried to unfavorably change or harm Bitcoin, other participants in the decentralized system would simply block them, preserving the integrity of Bitcoin.
 - In the modern world, you are always at the mercy of the inflation rate. History shows that you cannot trust banks with the money supply. If you had the ability to create money for whatever expenses you have, wouldn't you do it?
 <a href="#citations"><img class="post-header-image-right portrait standard-img-border" src="/assets/img/this-book-will-save-you-time/money-printer-brr.gif"></a>
-- <mark>Bitcoin is the first money allowing you to trade your only truly valueable asset (time) for similarly scarce units of value (bitcoin).</mark>
+- <mark>Bitcoin is the first money allowing you to trade your only truly valuable asset (limited time) for similarly scarce units of value (bitcoin).</mark>
 
 ## Chapter 10: A Promising Future
 
@@ -199,23 +209,21 @@ description:
 
 <h2 id="citations"><i>Work Cited</i></h2>
 
+BMG Group Inc. (2020). _USD – Purchasing Power & Currency in Circulation_ [JPEG]. https://bmg-group.com/usd-purchasing-power-currency-in-circulation/
+
 Brown, D et al. (2018, February 1). Biscuits and chocolates take the 'shrinkflation' test. BBC. https://www.bbc.com/news/uk-42864685
 
 Carter, K. (2016, July 17). _Distracted Lasers_ [GIF]. GIPHY. https://media.giphy.com/media/3oEjIacPJYAJubIDLO/giphy.gif
-
-Cranksy. (2021, January 1). _Federal Reserve Bitcoin Meme_ [GIF]. GIPHY. https://media.giphy.com/media/Y2ZUWLrTy63j9T6qrK/giphy.gif
-
-Discovery. (2020, October 23). _Pouring Discovery Channel_ [GIF]. GIPHY. https://media.giphy.com/media/rIFVUogXsogTqfdNJP/giphy-downsized-large.gif
 
 Fernando, J. (2021, December 2). Consumer Price Index (CPI). Investopedia. https://www.investopedia.com/terms/c/consumerpriceindex.asp
 
 Mahmudov, M. (2020). This Book Will Save You Time (1st ed.). Misir Mahmudov.
 
+maxc. (2020, February 17). _Ahhhhhhhhh! Make the federal reserve stop!_ [GIF]. Reddit. https://www.reddit.com/r/Anarcho_Capitalism/comments/fjl5fa/ahhhhhhhhh_make_the_federal_reserve_stop/?utm_source=share&utm_medium=web2x&context=3
+
 Seth, S. (2021, August 24). Explaining the Crypto in Cryptocurrency. Investopedia. https://www.investopedia.com/tech/explaining-crypto-cryptocurrency/
 
-Shultz, R. (2021, April 13). _Time Bitcoin_ [JPG]. MediaPost. https://www.mediapost.com/publications/article/362287/time-magazine-accepts-bitcoin-plans-crypto-vide.html
-
-USD Purchasing Power & Currency in Circulation. From "This Book Will Save You Time," by Misir Mahmudov, 2020, T, page 52. 2020.
+Shultz, R. (2021, April 13). _Time Bitcoin_ [JPEG]. MediaPost. https://www.mediapost.com/publications/article/362287/time-magazine-accepts-bitcoin-plans-crypto-vide.html
 
 [No Way Wow]. (2014, May 1). [GIF]. GIPHY. https://media.giphy.com/media/vQqeT3AYg8S5O/giphy.gif
 
